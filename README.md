@@ -36,6 +36,8 @@ This is the public home for **epímonos**: documentation, issues and releases. T
 
 **LaTeX maths, properly typeset.** Fractions, radicals, big operators with limits, matrices, `cases`, `align`, stretchy delimiters, accents and the standard symbol set — compiled to MathML and laid out by the browser. A contextual maths toolbar appears when the caret enters an expression, with a searchable palette of every symbol the engine knows.
 
+**Flowcharts, drawn.** A `mermaid` code fence containing a flowchart renders as SVG — nine node shapes, labelled edges, all four directions, themed from your editor colours. Other Mermaid diagram types still render as code blocks; a diagram that cannot be drawn always falls back to the code it has always been. Written from scratch in 8 KB rather than bundling several megabytes.
+
 **Your Obsidian vaults in the sidebar.** Detected automatically from Obsidian's own registry, or added by hand. Obsidian itself is not required — a vault is just a folder.
 
 **Persistent AI memory.** A built-in [Model Context Protocol](https://modelcontextprotocol.io) server gives Claude, Copilot and other agents long-term memory stored as ordinary Markdown notes in your vault. You can read, edit, link and graph it like anything else you write. Eight tools: overview, search, read, write, journal, list, links and delete.
