@@ -40,6 +40,8 @@ This is the public home for **epímonos**: documentation, issues and releases. T
 
 **Editor only, or editor and AI memory.** The first setup step asks. Choosing the editor on its own switches AI memory off and nothing further is required; it is reversible at any time.
 
+**Renaming a note keeps its links.** Rename or move a note and every link pointing at it is rewritten — wikilinks, embeds, Markdown links and image paths, with aliases, headings and block references intact. Renaming a folder updates everything that pointed into it. Code fences and code spans are left exactly as written, and a bare `[[Name]]` stays bare only while that name is still unique in the vault. One undo covers the whole sweep.
+
 **Your Obsidian vaults in the sidebar.** Detected automatically from Obsidian's own registry, or added by hand. Obsidian itself is not required — a vault is just a folder.
 
 **Persistent AI memory.** A built-in [Model Context Protocol](https://modelcontextprotocol.io) server gives Claude, Copilot and other agents long-term memory stored as ordinary Markdown notes in your vault. You can read, edit, link and graph it like anything else you write. Eight tools: overview, search, read, write, journal, list, links and delete.

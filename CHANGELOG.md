@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.8.0
+
+### Renaming a note keeps its links
+
+Rename or move a note and every link pointing at it is rewritten. Previously the link simply broke: `[[Old Name]]` resolves by file name, so changing the name left a dangling link with nothing to say so.
+
+- **Wikilinks, embeds, Markdown links and image paths**, with aliases, `#headings` and `^block` references carried over untouched.
+- **Renaming a folder** updates everything that pointed into it, and a note that moved gets its own relative links recomputed.
+- **Code is left alone.** A link inside a fenced block or a code span is being shown, not made, so rewriting the example in a note about wikilink syntax would be the wrong fix.
+- **A bare `[[Name]]` stays bare only while that name is still unique.** Shortest-path resolution always finds *something*, so renaming onto a name another folder already uses would otherwise produce a link that reads fine and opens the wrong note. When it is no longer unique, the full path is written instead.
+- Links written with `%20` keep their encoding; a new name containing spaces is wrapped in `<>`.
+- The whole sweep is a single undo, and notes that were not already open are saved rather than left dirty.
+- Renames done from VS Code's own Explorer, or by dragging a file, are caught too.
+- Off switch: `vaultsUpdateLinksOnRename` in the settings card.
+
+### Accuracy
+
+Known Limitations was still describing 0.6.1: it claimed only flowcharts were drawn, that `subgraph` was unsupported, and that `\widetilde` did not stretch. All three were fixed in 0.7.0.
+
+---
+
 ## 0.7.0
 
 ### Diagrams
