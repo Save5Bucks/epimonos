@@ -128,7 +128,7 @@ working across updates, whereas a versioned path breaks on the next release.
 
 Use `--scope project` (writes `.mcp.json`) to scope memory to one repository.
 
-**Restart Claude Code afterwards.** MCP servers load only at session start.
+**In a session that is already running, use `/mcp`** to list the configured servers and reconnect `vault-memory`. New sessions pick it up automatically.
 Verify with `claude mcp list` — expect `vault-memory … ✔ Connected`.
 
 ### Claude Desktop and other clients
@@ -156,7 +156,7 @@ claimed the association — the last write wins.
 moved or deleted; re-run **Set Up AI Memory**.
 
 **Claude Code does not see the tools.** Confirm with `claude mcp list`, then
-restart Claude Code. If it was registered at project scope, you must start the
+run `/mcp` and reconnect it, or start a new session. If it was registered at project scope, you must start the
 session inside that folder. If the CLI was not on `PATH` when you connected,
 the command falls back to copying the config instead.
 
