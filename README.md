@@ -1,8 +1,12 @@
 <p align="center">
-  <img src="images/icon.png" width="96" alt="epímonos">
+  <img src="https://raw.githubusercontent.com/Save5Bucks/epimonos/main/images/icon.png" width="96" alt="epímonos">
 </p>
 
 <h1 align="center">epímonos</h1>
+
+<p align="center">
+  <em>Επιμονή — persistence. The path is rarely direct; what matters is that you keep moving.</em>
+</p>
 
 <p align="center">
   <strong>A real Markdown editor inside VS Code — and persistent memory for your AI assistants, stored as your own notes.</strong>
@@ -11,23 +15,20 @@
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=save5bucks.epimonos">Install from the VS Code Marketplace</a>
   ·
-  <a href="docs/INSTALL.md">Setup guide</a>
+  <a href="https://github.com/Save5Bucks/epimonos/blob/main/docs/INSTALL.md">Setup guide</a>
   ·
   <a href="https://github.com/Save5Bucks/epimonos/issues">Report a bug</a>
 </p>
 
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Save5Bucks/epimonos/main/images/live-editing-math.gif" alt="Live editing with typeset mathematics" width="820">
+  <img src="https://raw.githubusercontent.com/Save5Bucks/epimonos/main/images/menus-and-mcp.gif" alt="The File menu and the AI memory status indicator" width="820">
 </p>
 
-<p align="center"><em>Click any block to edit its raw Markdown. Maths typesets as you go.</em></p>
+<p align="center"><em>A proper menu bar — files, recent notes, export, print, and a live AI memory indicator.</em></p>
 
 ---
 
 This is the public home for **epímonos**: documentation, issues and releases. The extension itself is closed source.
-
-> *Επιμονή* — persistence. The path is rarely direct; what matters is that you keep moving.
 
 ## What it does
 
@@ -39,24 +40,27 @@ This is the public home for **epímonos**: documentation, issues and releases. T
 
 **Persistent AI memory.** A built-in [Model Context Protocol](https://modelcontextprotocol.io) server gives Claude, Copilot and other agents long-term memory stored as ordinary Markdown notes in your vault. You can read, edit, link and graph it like anything else you write. Eight tools: overview, search, read, write, journal, list, links and delete.
 
-No third-party runtime dependencies — the Markdown engine, the maths typesetter and the MCP server are all written from scratch.
+**Built for VS Code.** Chat picks the memory server up automatically in agent mode, and Claude Code is detected whether you run it as the VS Code extension or the standalone CLI. Nothing to configure on your PATH.
 
+No third-party runtime dependencies — the Markdown engine, the maths typesetter and the MCP server are all written from scratch. The only bundled third-party component is the maths font ([STIX Two Math](https://github.com/stipub/stixfonts), OFL).
 
-## The menu bar and AI memory status
+## Maths, typeset as you write
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Save5Bucks/epimonos/main/images/menus-and-mcp.gif" alt="The File menu and the AI memory status dropdown" width="820">
+  <img src="https://raw.githubusercontent.com/Save5Bucks/epimonos/main/images/live-editing-math.gif" alt="Live editing with typeset mathematics" width="820">
 </p>
 
-The indicator at the right of the menu bar is a live check: green means the memory server started and answered the MCP handshake, not merely that a vault is configured. Click it for the vault, the tool count, and whether Claude Code is connected.
+<p align="center"><em>Click any block to edit its raw Markdown. Maths typesets as you go.</em></p>
+
+Written from scratch and compiled to MathML, so it renders fast and copies cleanly. The original LaTeX travels inside the document, so nothing is lost when you export or print. A malformed formula never damages the page — it falls back to showing its source, which matters when you are mid-keystroke.
 
 ## Documentation
 
 | | |
 | --- | --- |
-| [Setup guide](docs/INSTALL.md) | Installing, the four setup steps, other MCP clients, troubleshooting |
-| [Maths engine](docs/MATH_ENGINE.md) | How LaTeX becomes MathML, and why it is built that way |
-| [Maths toolbar](docs/MATH_TOOLBAR.md) | The contextual palette and slot navigation |
+| [Setup guide](https://github.com/Save5Bucks/epimonos/blob/main/docs/INSTALL.md) | Installing, the four setup steps, other MCP clients, troubleshooting |
+| [Maths engine](https://github.com/Save5Bucks/epimonos/blob/main/docs/MATH_ENGINE.md) | How LaTeX becomes MathML, and why it is built that way |
+| [Maths toolbar](https://github.com/Save5Bucks/epimonos/blob/main/docs/MATH_TOOLBAR.md) | The contextual palette and slot navigation |
 
 ## Requirements
 
@@ -74,4 +78,4 @@ Early. The free feature set above is complete and in use. **Team Memory**, which
 
 ## License
 
-Proprietary. Copyright © 2026 Tim Flinn, all rights reserved. See [LICENSE](LICENSE).
+Proprietary. Copyright © 2026 Tim Flinn, all rights reserved. See [LICENSE](https://github.com/Save5Bucks/epimonos/blob/main/LICENSE).
