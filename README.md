@@ -36,7 +36,9 @@ This is the public home for **epímonos**: documentation, issues and releases. T
 
 **LaTeX maths, properly typeset.** Fractions, radicals, big operators with limits, matrices, `cases`, `align`, stretchy delimiters, accents and the standard symbol set — compiled to MathML and laid out by the browser. A contextual maths toolbar appears when the caret enters an expression, with a searchable palette of every symbol the engine knows.
 
-**Flowcharts, drawn.** A `mermaid` code fence containing a flowchart renders as SVG — nine node shapes, labelled edges, all four directions, themed from your editor colours. Other Mermaid diagram types still render as code blocks; a diagram that cannot be drawn always falls back to the code it has always been. Written from scratch in 8 KB rather than bundling several megabytes.
+**Diagrams, drawn.** A `mermaid` code fence renders as SVG: flowcharts with nine node shapes and subgraphs, sequence diagrams, state diagrams and class diagrams, themed from your editor colours. ER, gantt, pie and journey still render as code blocks, and anything that cannot be drawn always falls back to the code it has always been. Written from scratch in about 16 KB rather than bundling several megabytes.
+
+**Editor only, or editor and AI memory.** The first setup step asks. Choosing the editor on its own switches AI memory off and nothing further is required; it is reversible at any time.
 
 **Your Obsidian vaults in the sidebar.** Detected automatically from Obsidian's own registry, or added by hand. Obsidian itself is not required — a vault is just a folder.
 
@@ -60,6 +62,7 @@ Written from scratch and compiled to MathML, so it renders fast and copies clean
 
 | | |
 | --- | --- |
+| [Changelog](https://github.com/Save5Bucks/epimonos/blob/main/CHANGELOG.md) | What changed in each release |
 | [Setup guide](https://github.com/Save5Bucks/epimonos/blob/main/docs/INSTALL.md) | Installing, the four setup steps, other MCP clients, troubleshooting |
 | [Maths engine](https://github.com/Save5Bucks/epimonos/blob/main/docs/MATH_ENGINE.md) | How LaTeX becomes MathML, and why it is built that way |
 | [Maths toolbar](https://github.com/Save5Bucks/epimonos/blob/main/docs/MATH_TOOLBAR.md) | The contextual palette and slot navigation |
