@@ -16,6 +16,13 @@
   <a href="https://github.com/Save5Bucks/epimonos/issues">Report a bug</a>
 </p>
 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Save5Bucks/epimonos/main/images/live-editing-math.gif" alt="Live editing with typeset mathematics" width="820">
+</p>
+
+<p align="center"><em>Click any block to edit its raw Markdown. Maths typesets as you go.</em></p>
+
 ---
 
 This is the public home for **epímonos**: documentation, issues and releases. The extension itself is closed source.
@@ -33,6 +40,15 @@ This is the public home for **epímonos**: documentation, issues and releases. T
 **Persistent AI memory.** A built-in [Model Context Protocol](https://modelcontextprotocol.io) server gives Claude, Copilot and other agents long-term memory stored as ordinary Markdown notes in your vault. You can read, edit, link and graph it like anything else you write. Eight tools: overview, search, read, write, journal, list, links and delete.
 
 No third-party runtime dependencies — the Markdown engine, the maths typesetter and the MCP server are all written from scratch.
+
+
+## The menu bar and AI memory status
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Save5Bucks/epimonos/main/images/menus-and-mcp.gif" alt="The File menu and the AI memory status dropdown" width="820">
+</p>
+
+The indicator at the right of the menu bar is a live check: green means the memory server started and answered the MCP handshake, not merely that a vault is configured. Click it for the vault, the tool count, and whether Claude Code is connected.
 
 ## Documentation
 
