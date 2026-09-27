@@ -70,6 +70,7 @@ Written from scratch and compiled to MathML, so it renders fast and copies clean
 | [Setup guide](https://github.com/Save5Bucks/epimonos/blob/main/docs/INSTALL.md) | Installing, the four setup steps, other MCP clients, troubleshooting |
 | [Maths engine](https://github.com/Save5Bucks/epimonos/blob/main/docs/MATH_ENGINE.md) | How LaTeX becomes MathML, and why it is built that way |
 | [Maths toolbar](https://github.com/Save5Bucks/epimonos/blob/main/docs/MATH_TOOLBAR.md) | The contextual palette and slot navigation |
+| [Diagram samples](https://github.com/Save5Bucks/epimonos/blob/main/samples/diagram-samples.md) | One of every diagram type — open it in epímonos to see them drawn |
 
 ## Requirements
 
