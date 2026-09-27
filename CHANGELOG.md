@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.10.1
+
+- **Checkboxes are blocks of their own** in Live mode: a click opens just that item, not the whole list, and a run of them still reads as one list. When a checklist touches other text, leaving the block adds the blank lines Markdown needs, so a line typed straight after a checklist is no longer folded into its last checkbox. Only blank lines are ever added, never inside code, and as one undo step. On by default; the `editorCheckboxBlocks` setting turns it off.
+- **Typing in a tall block no longer throws the page around.** In a block taller than the window, clicking could put the caret far from the click, and Enter or Backspace sent the page to the top or bottom. Three causes, each fixed: the click is matched to the nearest occurrence of the text around it, not the first; opening a block keeps it in place with the clicked line under the pointer; and the browser's own caret-follow step, which misplaces the caret when a line break is added or removed, is held back while the editor shows the caret itself. Scrolling by hand is never held.
+- Clicking a block right after another was tidied opens the block now holding the clicked line, never a new box at the end of the note.
+
 ## 0.10.0
 
 ### Diagrams: mindmaps, git graphs, timelines, quadrant, XY, sankey, block, kanban, requirement, C4, packet, radar, architecture, treemap, venn, ishikawa, tree view, use case, cynefin, wardley, swimlane, railroad, event modeling, agentflow and ZenUML

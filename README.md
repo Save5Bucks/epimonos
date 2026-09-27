@@ -32,7 +32,9 @@ This is the public home for **epímonos**: documentation, issues and releases. T
 
 ## What it does
 
-**Write, don't mark up.** A live editing mode where you work in the rendered document and click any block to edit its raw Markdown. Source and preview modes too. Your file is never reformatted — edits are spliced in as minimal diffs, so undo, save, git and side-by-side editing all behave normally.
+**Write, don't mark up.** A live editing mode where you work in the rendered document and click any block to edit its raw Markdown. Source and preview modes too. Your file is never reformatted — edits are spliced in as minimal diffs, so undo, save, git and side-by-side editing all behave normally. The one change it makes on its own is adding blank lines around a checklist that touches other text, and that can be turned off.
+
+**Checkboxes are blocks of their own.** In live mode each checkbox is its own block, so a click opens just that item, and a line typed after a checklist is never folded into its last checkbox. On by default; the `editorCheckboxBlocks` setting turns it off.
 
 **LaTeX maths, properly typeset.** Fractions, radicals, big operators with limits, matrices, `cases`, `align`, stretchy delimiters, accents and the standard symbol set — compiled to MathML and laid out by the browser. A contextual maths toolbar appears when the caret enters an expression, with a searchable palette of every symbol the engine knows.
 
